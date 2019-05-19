@@ -2,7 +2,7 @@ import {
   ADD_POST,
   CLAP_POST,
   DELETE_POST
-} from './actionTypes'
+} from '../actions/actionTypes'
 
 export const PostsReducer = (state = [], action) => {
   switch(action.type) {
