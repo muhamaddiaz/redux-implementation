@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import {BrowserRouter} from 'react-router-dom'
-import Posts from './components/containers/PostsContainer'
 import {Provider} from 'react-redux'
 import store from './store'
+
+import MainPage from './components/presentations/MainPage';
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
         <BrowserRouter>
-          <Posts />
+          <MainPage />
         </BrowserRouter>
       </Provider>
       
